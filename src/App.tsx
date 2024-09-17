@@ -29,6 +29,8 @@ function App() {
           })
           .then((otp) => {
             // @ts-ignore
+            alert(otp?.code)
+            // @ts-ignore
             setMessage(otp?.code)
           })
           .catch((err) => {
